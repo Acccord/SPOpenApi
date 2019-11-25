@@ -1,0 +1,2 @@
+include ':app', ':openapi'
+rootProject.name='SPOpenApi'
