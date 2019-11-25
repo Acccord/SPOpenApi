@@ -10,6 +10,7 @@ import com.vi.openapi.bean.CarVersion;
 import com.vi.openapi.listener.OnCarDataListener;
 import com.vi.openapi.util.SerialDataUtils;
 import com.vi.vioserial.listener.OnSerialDataListener;
+import com.vi.vioserial.util.Logger;
 
 import java.util.ArrayList;
 import java.util.HashMap;
