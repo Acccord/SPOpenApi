@@ -3,8 +3,6 @@ package com.vi.openapi;
 import android.text.TextUtils;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import com.vi.openapi.listener.OnLockerDataListener;
 import com.vi.vioserial.BaseSerial;
 import com.vi.vioserial.listener.OnSerialDataListener;
@@ -58,10 +56,10 @@ public class LockerSerial {
             public void onDataBack(String data) {
                 String dataStr = SerialDataUtils.hexStringToString(data);
                 if (dataStr.contains("read")) {
-                    JsonObject returnData = new JsonParser().parse(dataStr).getAsJsonObject();
+                    //JsonObject returnData = new JsonParser().parse(dataStr).getAsJsonObject();
                     if (mListener != null) {
                         for (int i = mListener.size() - 1; i >= 0; i--) {
-                            mListener.get(i).boxStatus(returnData);
+                            mListener.get(i).boxStatus(dataStr);
                         }
                     }
                 }
@@ -143,30 +141,34 @@ public class LockerSerial {
     }
 
     /**
-     * open locker
+     * open door
      *
-     * @param pcb       locker index
-     * @param boxNumber Box number
+     * @param lockerNumber locker number
+     * @param doorNumber   door number
      */
-    public void openBox(int pcb, int boxNumber) {
+    public void openDoor(int lockerNumber, int doorNumber) {
+        openDoor(lockerNumber, doorNumber, 100);
+    }
+
+    public void openDoor(int lockerNumber, int doorNumber, int openTime) {
         Map<String, Object> map = new HashMap<>();
         map.put("cmd", "open");
-        map.put("SubPCB", pcb);
-        map.put("box", boxNumber);
-        map.put("opentime", 100);
+        map.put("SubPCB", lockerNumber);
+        map.put("box", doorNumber);
+        map.put("opentime", openTime);
         String gsonStr = new Gson().toJson(map);
         sendData(gsonStr);
     }
 
     /**
-     * read locker status
+     * read doors status
      *
-     * @param pcb locker index
+     * @param lockerNumber locker number
      */
-    public void readBox(int pcb) {
+    public void readDoors(int lockerNumber) {
         Map<String, Object> map = new HashMap<>();
         map.put("cmd", "Read");
-        map.put("SubPCB", pcb);
+        map.put("SubPCB", lockerNumber);
         String gsonStr = new Gson().toJson(map);
         sendData(gsonStr);
     }

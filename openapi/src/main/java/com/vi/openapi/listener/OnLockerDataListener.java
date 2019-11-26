@@ -1,7 +1,5 @@
 package com.vi.openapi.listener;
 
-import com.google.gson.JsonObject;
-
 /**
  * @author Vi
  * @date 2019-07-18 18:15
@@ -10,6 +8,6 @@ import com.google.gson.JsonObject;
 
 public interface OnLockerDataListener {
 
-    void boxStatus(JsonObject jsonObject);
+    void boxStatus(String dataStr);
 
 }
