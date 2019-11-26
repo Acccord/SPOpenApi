@@ -12,7 +12,7 @@ allprojects {
 在模块的build.gradle添加
 ```
 dependencies {
-    implementation 'com.github.Acccord:AndroidSerialPort:1.2.0'
+    implementation 'com.github.Acccord:SPOpenApi:1.0.2'
 }
 ```
 
@@ -95,8 +95,4 @@ void tempDataBack(TempBean tempBean);
 
 ### 更新记录
 - 2019-08-13 优化串口打开方式和回调结果
-
-### 快捷导航
-- [主板API](https://github.com/Acccord/AndroidSerialPort/blob/master/doc/Channel.md)
-- [升降板API](https://github.com/Acccord/AndroidSerialPort/blob/master/doc/LiftApi.md)
-- [小推车API](https://github.com/Acccord/AndroidSerialPort/blob/master/doc/CarApi.md)
+- 2019-11-26 SDK地址更新

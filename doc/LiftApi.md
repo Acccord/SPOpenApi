@@ -12,10 +12,6 @@ allprojects {
 在模块的build.gradle添加
 ```
 dependencies {
-    implementation 'com.github.Acccord:AndroidSerialPort:1.2.0'
+    implementation 'com.github.Acccord:SPOpenApi:1.0.2'
 }
 ```
-### 快捷导航
-- [主板API](https://github.com/Acccord/AndroidSerialPort/blob/master/doc/Channel.md)
-- [温控板API](https://github.com/Acccord/AndroidSerialPort/blob/master/doc/TempApi.md)
-- [小推车API](https://github.com/Acccord/AndroidSerialPort/blob/master/doc/CarApi.md)

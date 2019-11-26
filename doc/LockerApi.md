@@ -13,7 +13,7 @@ allprojects {
 在模块的build.gradle添加
 ```
 dependencies {
-    implementation 'com.github.Acccord:AndroidSerialPort:1.2.0'
+    implementation 'com.github.Acccord:SPOpenApi:1.0.2'
 }
 ```
 
@@ -76,3 +76,4 @@ void boxStatus(JsonObject jsonObject);
 
 ### 更新记录
 - 2019-08-13 优化串口打开方式和回调结果
+- 2019-11-26 SDK地址更新

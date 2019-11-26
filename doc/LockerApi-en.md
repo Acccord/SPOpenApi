@@ -13,7 +13,7 @@ allprojects {
 Add the dependency
 ```
 dependencies {
-    implementation 'com.github.Acccord:AndroidSerialPort:1.2.0'
+    implementation 'com.github.Acccord:SPOpenApi:1.0.2'
 }
 ```
 
@@ -76,3 +76,4 @@ void boxStatus(JsonObject jsonObject);
 
 ### update record
 - 2019-08-13 Optimize serial port open mode and callback result
+- 2019-11-26 update SDK address 

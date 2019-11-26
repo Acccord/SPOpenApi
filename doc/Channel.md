@@ -13,7 +13,7 @@ allprojects {
 在模块的build.gradle添加
 ```
 dependencies {
-    implementation 'com.github.Acccord:AndroidSerialPort:1.2.0'
+    implementation 'com.github.Acccord:SPOpenApi:1.0.2'
 }
 ```
 
@@ -183,6 +183,8 @@ VioSerial.instance().lightClose();
 - 2019-08-26 【1.2.0】
     - 加入光幕检测功能
     - 优化电机转动结果回调
+- 2019-11-26 
+    - SDK地址更新
 
 ### 专用名词介绍
 - 主板
@@ -203,8 +205,3 @@ VioSerial.instance().lightClose();
 第三位数字 -> 货道顺序：第一个货道为0，第二个货道为1 ...依次类推。注意货道顺序从0开始，最多到9，也就是每层最多十个货道。
 例：第一层第一个货道为110；第二层第二个货道为121；第五层第七个货道为156 ...
 ```
-
-### 快捷导航
-- [温控板API](https://github.com/Acccord/AndroidSerialPort/blob/master/doc/TempApi.md)
-- [升降板API](https://github.com/Acccord/AndroidSerialPort/blob/master/doc/LiftApi.md)
-- [小推车API](https://github.com/Acccord/AndroidSerialPort/blob/master/doc/CarApi.md)
