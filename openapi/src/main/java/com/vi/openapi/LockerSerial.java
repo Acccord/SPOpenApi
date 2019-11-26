@@ -5,8 +5,8 @@ import android.text.TextUtils;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.vi.openapi.listener.OnLockerDataListener;
 import com.vi.vioserial.BaseSerial;
-import com.vi.vioserial.listener.OnLockerDataListener;
 import com.vi.vioserial.listener.OnSerialDataListener;
 import com.vi.vioserial.util.Logger;
 import com.vi.vioserial.util.SerialDataUtils;
@@ -33,7 +33,7 @@ public class LockerSerial {
 
     public static LockerSerial instance() {
         if (instance == null) {
-            synchronized (com.vi.vioserial.LockerSerial.class) {
+            synchronized (LockerSerial.class) {
                 if (instance == null) {
                     instance = new LockerSerial();
                 }

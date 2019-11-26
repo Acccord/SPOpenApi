@@ -3,9 +3,9 @@ package com.vi.openapi;
 import android.text.TextUtils;
 
 import com.google.gson.Gson;
+import com.vi.openapi.bean.LiftBean;
+import com.vi.openapi.listener.OnLiftDataListener;
 import com.vi.vioserial.BaseSerial;
-import com.vi.vioserial.bean.LiftBean;
-import com.vi.vioserial.listener.OnLiftDataListener;
 import com.vi.vioserial.listener.OnSerialDataListener;
 import com.vi.vioserial.util.Logger;
 import com.vi.vioserial.util.SerialDataUtils;

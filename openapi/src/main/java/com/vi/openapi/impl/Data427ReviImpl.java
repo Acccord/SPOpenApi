@@ -8,7 +8,7 @@ import com.vi.openapi.bean.MoneyBean;
 import com.vi.openapi.bean.RestBean;
 import com.vi.openapi.listener.OnSerialDataParse;
 import com.vi.openapi.listener.OnVioDataListener;
-import com.vi.openapi.util.SerialDataUtils;
+import com.vi.vioserial.util.SerialDataUtils;
 
 import java.util.List;
 

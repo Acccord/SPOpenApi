@@ -2,15 +2,15 @@ package com.vi.openapi;
 
 import android.text.TextUtils;
 
+import com.vi.openapi.impl.Data101ReviImpl;
+import com.vi.openapi.impl.Data101SendImpl;
+import com.vi.openapi.impl.Data427ReviImpl;
+import com.vi.openapi.impl.Data427SendImpl;
+import com.vi.openapi.listener.OnSerialDataParse;
+import com.vi.openapi.listener.OnSerialDataSend;
+import com.vi.openapi.listener.OnVioDataListener;
 import com.vi.vioserial.BaseSerial;
-import com.vi.vioserial.impl.Data101ReviImpl;
-import com.vi.vioserial.impl.Data101SendImpl;
-import com.vi.vioserial.impl.Data427ReviImpl;
-import com.vi.vioserial.impl.Data427SendImpl;
 import com.vi.vioserial.listener.OnSerialDataListener;
-import com.vi.vioserial.listener.OnSerialDataParse;
-import com.vi.vioserial.listener.OnSerialDataSend;
-import com.vi.vioserial.listener.OnVioDataListener;
 import com.vi.vioserial.util.Logger;
 
 import java.util.ArrayList;

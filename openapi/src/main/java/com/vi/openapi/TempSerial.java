@@ -3,10 +3,10 @@ package com.vi.openapi;
 import android.text.TextUtils;
 
 import com.google.gson.Gson;
+import com.vi.openapi.bean.TempBean;
+import com.vi.openapi.listener.OnTempDataListener;
 import com.vi.vioserial.BaseSerial;
-import com.vi.vioserial.bean.TempBean;
 import com.vi.vioserial.listener.OnSerialDataListener;
-import com.vi.vioserial.listener.OnTempDataListener;
 import com.vi.vioserial.util.Logger;
 import com.vi.vioserial.util.SerialDataUtils;
 

@@ -3,14 +3,14 @@ package com.vi.openapi;
 import android.text.TextUtils;
 
 import com.google.gson.Gson;
-import com.vi.vioserial.BaseSerial;
 import com.vi.openapi.bean.CarAction;
 import com.vi.openapi.bean.CarStatus;
 import com.vi.openapi.bean.CarVersion;
 import com.vi.openapi.listener.OnCarDataListener;
-import com.vi.openapi.util.SerialDataUtils;
+import com.vi.vioserial.BaseSerial;
 import com.vi.vioserial.listener.OnSerialDataListener;
 import com.vi.vioserial.util.Logger;
+import com.vi.vioserial.util.SerialDataUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;

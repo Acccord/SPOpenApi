@@ -7,7 +7,7 @@ import com.vi.openapi.bean.DataVersion;
 import com.vi.openapi.listener.OnSerialDataParse;
 import com.vi.openapi.listener.OnVioDataListener;
 import com.vi.openapi.util.CRC16Util;
-import com.vi.openapi.util.SerialDataUtils;
+import com.vi.vioserial.util.SerialDataUtils;
 
 import java.util.List;
 

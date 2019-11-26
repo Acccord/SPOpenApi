@@ -1,7 +1,6 @@
 package com.vi.openapi.util;
 
-import com.vi.openapi.util.CRC16Util;
-import com.vi.openapi.util.SerialDataUtils;
+import com.vi.vioserial.util.SerialDataUtils;
 
 /**
  * @author Vi
