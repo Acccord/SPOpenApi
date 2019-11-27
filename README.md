@@ -1,5 +1,5 @@
-## 说明
-- [串口通信SDK地址](https://github.com/Acccord/AndroidSerialPort)
+## DESC
+- [SerialPortSDK](https://github.com/Acccord/AndroidSerialPort)
 
 ## API 
 
@@ -14,13 +14,13 @@
 - [Locker](https://github.com/Acccord/SPOpenApi/blob/master/doc/LockerApi.md)
 
 
-## 更新记录
+## UPDATE RECORD
 
 - 2019-11-26【1.0.2】
-    - 发布1.0.2版本
-    - 更新Locker Api
-    - 加入Locker DemoApp
+    - Release 1.0.2
+    - Update Locker Api
+    - Add Locker DemoApp
 
 - 2019-11-27【1.0.3】
-    - 更新Locker Api
-    - 发布1.0.3版本
+    - Update Locker Api
+    - Release 1.0.3
