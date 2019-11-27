@@ -11,7 +11,7 @@
 
 - [Temp](https://github.com/Acccord/SPOpenApi/blob/master/doc/TempApi.md)
 
-- [Locker](https://github.com/Acccord/SPOpenApi/blob/master/doc/LockerApi.md)
+- [Locker](https://github.com/Acccord/SPOpenApi/blob/master/doc/LockerApi-en.md)
 
 
 ## UPDATE RECORD
