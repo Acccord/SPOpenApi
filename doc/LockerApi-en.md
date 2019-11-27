@@ -81,3 +81,4 @@ Add the dependency
 ### update record
 - 2019-08-13 Optimize serial port open mode and callback result
 - 2019-11-26 update SDK address 
+- 2019-11-27 update detail doc
