@@ -1,5 +1,5 @@
 ## LOCKER API
-- [English](https://github.com/Acccord/AndroidSerialPort/blob/master/doc/LockerApi-en.md)
+- [English](https://github.com/Acccord/SPOpenApi/blob/master/doc/LockerApi-en.md)
 
 #### 第1步：配置
 在项目的build.gradle添加
