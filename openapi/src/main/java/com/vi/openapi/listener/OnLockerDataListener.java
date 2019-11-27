@@ -8,6 +8,6 @@ package com.vi.openapi.listener;
 
 public interface OnLockerDataListener {
 
-    void boxStatus(String dataStr);
+    void doorStatus(String dataStr);
 
 }

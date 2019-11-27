@@ -20,3 +20,7 @@
     - 发布1.0.2版本
     - 更新Locker Api
     - 加入Locker DemoApp
+
+- 2019-11-27【1.0.3】
+    - 更新Locker Api
+    - 发布1.0.3版本

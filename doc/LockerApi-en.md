@@ -13,7 +13,7 @@ Add it in your root build.gradle at the end of repositories:
 Add the dependency
 ```
     dependencies {
-        implementation 'com.github.Acccord:SPOpenApi:1.0.2'
+        implementation 'com.github.Acccord:SPOpenApi:1.0.3'
     }
 ```
 
@@ -67,11 +67,15 @@ Add the dependency
 
     //The returned box status information is returned in the following method of OnLockerDataListener
     /**
-     * Return box status information
-     *
-     * @param dataStr
+     * Return doors status information
+     * {"cmd":"Read","SubPCB":1,"D1":1,"D2":1,"D3":1,"D4":1,"D5":1,"D6":1,"D7":1,"D8":1,"D9":1,"D10":1,"D11":1,"D12":1,"S1":1,"S2":1,"S3":1,"S4":1,"S5":1,"S6":1,"S7":1,"S8":1,"S9":1,"S10":1,"S11":1,"S12":1}
+     * Description:
+     * 
+     * "D1":1---Door close,0---Door open
+     * "S1":1---Infr unobstructed,0---Infr Obstructed 
+     * @param dataStr  
      */
-    void boxStatus(String dataStr);
+    void doorStatus(String dataStr);
 ```
 
 ### update record

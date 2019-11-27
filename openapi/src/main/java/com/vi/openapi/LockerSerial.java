@@ -59,7 +59,7 @@ public class LockerSerial {
                     //JsonObject returnData = new JsonParser().parse(dataStr).getAsJsonObject();
                     if (mListener != null) {
                         for (int i = mListener.size() - 1; i >= 0; i--) {
-                            mListener.get(i).boxStatus(dataStr);
+                            mListener.get(i).doorStatus(dataStr);
                         }
                     }
                 }

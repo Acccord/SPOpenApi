@@ -13,7 +13,7 @@
 在模块的build.gradle添加
 ```
     dependencies {
-        implementation 'com.github.Acccord:SPOpenApi:1.0.2'
+        implementation 'com.github.Acccord:SPOpenApi:1.0.3'
     }
 ```
 
@@ -68,10 +68,14 @@
     //返回的箱子状态信息在OnLockerDataListener以下方法中返回
     /**
      * 返回箱子状态信息
-     *
-     * @param dataStr
+     * {"cmd":"Read","SubPCB":1,"D1":1,"D2":1,"D3":1,"D4":1,"D5":1,"D6":1,"D7":1,"D8":1,"D9":1,"D10":1,"D11":1,"D12":1,"S1":1,"S2":1,"S3":1,"S4":1,"S5":1,"S6":1,"S7":1,"S8":1,"S9":1,"S10":1,"S11":1,"S12":1}
+     * 说明：
+     * 
+     * "D1":1---门开,0---门关
+     * "S1":1---红外无遮挡,0---红外有遮挡
+     * @param dataStr 
      */
-    void boxStatus(String dataStr);
+    void doorStatus(String dataStr);
 ```
 
 ### 更新记录

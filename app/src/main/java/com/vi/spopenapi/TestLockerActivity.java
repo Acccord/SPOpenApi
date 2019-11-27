@@ -10,7 +10,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.gson.JsonObject;
 import com.vi.openapi.LockerSerial;
 import com.vi.openapi.listener.OnLockerDataListener;
 
@@ -139,7 +138,7 @@ public class TestLockerActivity extends AppCompatActivity implements View.OnClic
     }
 
     @Override
-    public void boxStatus(String dataStr) {
+    public void doorStatus(String dataStr) {
         //JsonObject returnData = new JsonParser().parse(dataStr).getAsJsonObject();
         mTvData.setText(dataStr);
     }
