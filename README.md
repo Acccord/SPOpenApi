@@ -24,3 +24,7 @@
 - 2019-11-27【1.0.3】
     - Update Locker Api
     - Release 1.0.3
+    
+- 2019-12-24【1.0.4】
+    - Update Locker Api
+    - Release 1.0.4
