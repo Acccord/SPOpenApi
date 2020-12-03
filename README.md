@@ -28,3 +28,7 @@
 - 2019-12-24【1.0.4】
     - Update Locker Api
     - Release 1.0.4
+
+- 2020-12-03【1.0.5】
+    - Temp Api add humidity sensor
+    - Release 1.0.5

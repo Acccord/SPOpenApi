@@ -75,15 +75,16 @@ TempSerial.instance().readTemp();
 //返回的当前温度信息在OnTempDataListener以下方法中返回
 /**
  * TempBean参数
- * @param tmp1 设备内温度
- * @param tmp2 冷凝器温度
- * @param tmp3 加热器温度
+ * @param tmp1 设备内温度，返回99就代表未接探头
+ * @param tmp2 冷凝器温度，返回99就代表未接探头
+ * @param tmp3 加热器温度，返回99就代表未接探头
  * @param tmp1SetH 设置的制冷温度上限
  * @param tmp1SetL 设置的制冷温度下限
  * @param tmp2SetH 设置的除霜温度上限
  * @param tmp2SetL 设置的除霜温度下限
  * @param tmp3SetH 设置的加热温度上限
  * @param tmp3SetL 设置的加热温度下限
+ * @param humi     湿度值，百分比，返回0就表示未接探头
  * @param version 版本号
  */
 void tempDataBack(TempBean tempBean);

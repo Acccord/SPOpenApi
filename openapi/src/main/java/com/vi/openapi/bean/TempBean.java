@@ -17,6 +17,7 @@ public class TempBean {
     private int tmp2SetL;
     private int tmp3SetH;
     private int tmp3SetL;
+    private int humi;
     private String version;
 
     public int getWkcmd() {
@@ -97,6 +98,14 @@ public class TempBean {
 
     public void setTmp3SetL(int tmp3SetL) {
         this.tmp3SetL = tmp3SetL;
+    }
+
+    public int getHumi() {
+        return humi;
+    }
+
+    public void setHumi(int humi) {
+        this.humi = humi;
     }
 
     public String getVersion() {
