@@ -193,6 +193,56 @@ public class LiftSerial {
         sendCommand(mGson.toJson(map));
     }
 
+    //ADD
+    public void testCmd(int pwm, int dir, int add) {
+        Map<String, Integer> map = new HashMap<>();
+        map.put("cmd", 0);
+        map.put("pwm", pwm);
+        map.put("dir", dir);
+        map.put("add", add);
+        sendCommand(mGson.toJson(map));
+    }
+
+    public void highCmd(int high, int add) {
+        Map<String, Integer> map = new HashMap<>();
+        map.put("cmd", 1);
+        map.put("High", high);
+        map.put("add", add);
+        sendCommand(mGson.toJson(map));
+    }
+
+    public void toZero(int add) {
+        Map<String, Integer> map = new HashMap<>();
+        map.put("cmd", 2);
+        map.put("add", add);
+        sendCommand(mGson.toJson(map));
+    }
+
+    public void downCmd(int add) {
+        Map<String, Integer> map = new HashMap<>();
+        map.put("cmd", 0);
+        map.put("pwm", 200);
+        map.put("dir", 0);
+        map.put("add", add);
+        sendCommand(mGson.toJson(map));
+    }
+
+    public void doorCmd(int door, int light, int add) {
+        Map<String, Integer> map = new HashMap<>();
+        map.put("cmd", 3);
+        map.put("door", door);
+        map.put("light", light);
+        map.put("add", add);
+        sendCommand(mGson.toJson(map));
+    }
+
+    public void getHigh(int add) {
+        Map<String, Integer> map = new HashMap<>();
+        map.put("cmd", 5);
+        map.put("add", add);
+        sendCommand(mGson.toJson(map));
+    }
+
     private void sendCommand(String data) {
         if (isOpen()) {
             String commandHex = SerialDataUtils.stringToHexString(data);
