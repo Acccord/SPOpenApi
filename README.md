@@ -32,3 +32,7 @@
 - 2020-12-03【1.0.5】
     - Temp Api add humidity sensor
     - Release 1.0.5
+
+- 2020-12-09【1.0.6】
+    - Lift Api Add add field
+    - Release 1.0.6
