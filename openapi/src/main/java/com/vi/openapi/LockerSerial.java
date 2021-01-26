@@ -171,6 +171,16 @@ public class LockerSerial {
         sendData(gsonStr);
     }
 
+    /**
+     * set cmd
+     *
+     * @param map locker number
+     */
+    public void setData(Map<String, Object> map) {
+        String gsonStr = new Gson().toJson(map);
+        sendData(gsonStr);
+    }
+
     private void sendData(String data) {
         if (isOpen()) {
             String commandHex = SerialDataUtils.stringToHexString(data);

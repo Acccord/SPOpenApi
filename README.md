@@ -36,3 +36,6 @@
 - 2020-12-09【1.0.6】
     - Lift Api Add add field
     - Release 1.0.6
+    
+- 2021-01-26【1.0.7】
+    - Update Locker Api
