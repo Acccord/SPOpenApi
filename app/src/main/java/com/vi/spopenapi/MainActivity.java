@@ -7,6 +7,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.vi.openapi.LiftSerial;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button mBtnTestLocker;
 
@@ -17,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mBtnTestLocker = findViewById(R.id.btn_locker);
         mBtnTestLocker.setOnClickListener(this);
+        LiftSerial.instance().doorCmd(int door, int light, int add);
     }
 
     @Override

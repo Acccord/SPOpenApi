@@ -12,7 +12,7 @@ allprojects {
 在模块的build.gradle添加
 ```
 dependencies {
-    implementation 'com.github.Acccord:SPOpenApi:1.0.4'
+    implementation 'com.github.Acccord:SPOpenApi:1.0.7'
 }
 ```
 

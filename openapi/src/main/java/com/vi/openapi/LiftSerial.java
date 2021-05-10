@@ -236,6 +236,10 @@ public class LiftSerial {
         sendCommand(mGson.toJson(map));
     }
 
+    /**
+     *
+     * @param add 板子编号，只有一块板子默认1
+     */
     public void getHigh(int add) {
         Map<String, Integer> map = new HashMap<>();
         map.put("cmd", 5);
