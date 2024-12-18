@@ -1,7 +1,8 @@
 ## DESC
+
 - [SerialPortSDK](https://github.com/Acccord/AndroidSerialPort)
 
-## API 
+## API
 
 - [Channel](https://github.com/Acccord/SPOpenApi/blob/master/doc/Channel.md)
 
@@ -13,7 +14,6 @@
 
 - [Locker](https://github.com/Acccord/SPOpenApi/blob/master/doc/LockerApi-en.md)
 
-
 ## UPDATE RECORD
 
 - 2019-11-26【1.0.2】
@@ -24,7 +24,7 @@
 - 2019-11-27【1.0.3】
     - Update Locker Api
     - Release 1.0.3
-    
+
 - 2019-12-24【1.0.4】
     - Update Locker Api
     - Release 1.0.4
@@ -36,6 +36,9 @@
 - 2020-12-09【1.0.6】
     - Lift Api Add add field
     - Release 1.0.6
-    
+
 - 2021-01-26【1.0.7】
     - Update Locker Api
+
+- 2024-12-18【1.0.8】
+    - Upgrade dependencies

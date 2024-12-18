@@ -1,15 +1,15 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 31
     //buildToolsVersion "29.0.2"
 
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 28
-        versionCode 106
-        versionName "1.0.6"
+        targetSdkVersion 31
+        versionCode 108
+        versionName "1.0.8"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
@@ -25,6 +25,6 @@ android {
 }
 
 dependencies {
-    api 'com.github.Acccord:AndroidSerialPort:1.5.0'
+    api 'com.github.Acccord:AndroidSerialPort:1.5.2'
     api 'com.google.code.gson:gson:2.8.5'
 }
